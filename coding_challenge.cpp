@@ -69,6 +69,8 @@ bool check_parentheses(string s){
 
     stack<int> checker;
     int layers = 0;
+    // variable to check if the string ever had parentheses
+    bool stringHadPars = false; 
 
     if(s.size() == 0)
         return false;
@@ -79,6 +81,7 @@ bool check_parentheses(string s){
         if(static_cast<int>(s[i]) == opening_par){
             layers++;
             checker.push(layers);
+            stringHadPars = true;
         }
 
         if(static_cast<int>(s[i]) == closing_par){
@@ -90,11 +93,9 @@ bool check_parentheses(string s){
             layers--;
             checker.pop();
         }
-
-        //cout << layers << endl;
             
     }
 
-    return checker.empty();
+    return checker.empty() && stringHadPars;
 
 }

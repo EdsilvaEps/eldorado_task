@@ -34,7 +34,7 @@ One possible answer: [2, 1, 4, 3]
 Another possible answer: [4, 1, 3, 2]
 
 ### 2.1. Code and execution
-In this repository, the file `coding_task_2.cpp` refers to the first task and `task12` is its executable file. Examples of use are as follows:
+In this repository, the file `coding_task_2.cpp` refers to the first task and `task2` is its executable file. Examples of use are as follows:
 
 ```sh
 $ ./task2 1 2 3 4 

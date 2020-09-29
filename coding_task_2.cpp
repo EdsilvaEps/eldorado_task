@@ -1,3 +1,20 @@
+/*--------------------------------------------------
+autor: Edson Silva 
+
+Este programa recebe como argumento da cli um
+conjunto de numeros separados por espaços, 
+mostra estes numeros formatados como um array e 
+em seguida mostra um array reorganizado segundo 
+a seguinte regra:
+
+a1 <= a2 >= a3 <= a4 >= a5....
+
+O programa faz um tratamento da entrada e não acei-
+tará nad além de int como argumento. Estes numeros
+são concatenados em  array e modificados segundo a 
+regra acima.
+---------------------------------------------------*/
+
 #include <iostream>
 #include <string>
 #include <stdexcept>
